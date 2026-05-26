@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Portfolio | BURADA RANJITHA</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- HEADER -->
+    <header class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+
+            <div>
+                <h1 class="text-2xl font-bold">Online Portfolio</h1>
+                <p class="text-sm text-gray-400">My Blog Site</p>
+            </div>
+
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#" class="nav-link">HOME</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#skills" class="nav-link">SKILLS</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-bg min-h-screen flex items-center">
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- LEFT CONTENT -->
+            <div class="space-y-6">
+
+                <h1 class="text-5xl md:text-6xl font-bold text-white leading-tight">
+                    BURADA RANJITHA
+                </h1>
+
+                <p class="text-xl text-gray-200 max-w-lg">
+                    Hello! I'm a passionate web developer with skills in HTML,
+                    CSS, JavaScript, Python, and Java.
+                    I enjoy building clean and responsive websites and modern web applications.
+                </p>
+
+                <button onclick="hireMe()"
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition">
+                    Hire Me
+                </button>
+
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="flex justify-center">
+
+                <img
+                    src="photo.jpeg"
+                    alt="Profile Photo"
+                    class="rounded-2xl shadow-2xl w-[350px] h-[450px] object-cover">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-white">
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- IMAGE -->
+            <div>
+
+                <img
+                    src="photo.jpeg"
+                    alt="About Photo"
+                    class="rounded-3xl shadow-xl w-full max-w-md mx-auto">
+
+            </div>
+
+            <!-- CONTENT -->
+            <div>
+
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-1 bg-blue-600"></div>
+                    <h2 class="text-4xl font-bold">ABOUT ME</h2>
+                </div>
+
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    I am a passionate web developer interested in web development,
+                    programming, and creating modern responsive applications.
+                </p>
+
+                <p class="text-gray-600 leading-relaxed mb-8">
+                    I work with HTML, CSS, JavaScript, Java, and Python.
+                    I enjoy learning new technologies and building projects.
+                </p>
+
+                <button onclick="downloadResume()"
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition">
+                    Download Resume
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-20 bg-gray-100">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-14">
+                <h2 class="text-4xl font-bold mb-4">MY SKILLS</h2>
+                <p class="text-gray-600">
+                    Technologies and tools I work with
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- HTML -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+
+                    <i class="fa-brands fa-html5 text-5xl text-orange-500 mb-4"></i>
+
+                    <h3 class="text-2xl font-semibold mb-2">HTML</h3>
+
+                    <p class="text-gray-600">
+                        Building structured and semantic web pages.
+                    </p>
+
+                </div>
+
+                <!-- CSS -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+
+                    <i class="fa-brands fa-css3-alt text-5xl text-blue-500 mb-4"></i>
+
+                    <h3 class="text-2xl font-semibold mb-2">CSS</h3>
+
+                    <p class="text-gray-600">
+                        Creating modern responsive designs and animations.
+                    </p>
+
+                </div>
+
+                <!-- JS -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+
+                    <i class="fa-brands fa-js text-5xl text-yellow-400 mb-4"></i>
+
+                    <h3 class="text-2xl font-semibold mb-2">JavaScript</h3>
+
+                    <p class="text-gray-600">
+                        Adding interactivity and dynamic features to websites.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-20 bg-white">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-14">
+                <h2 class="text-4xl font-bold mb-4">MY PROJECTS</h2>
+                <p class="text-gray-600">
+                    Some of my recent works and portfolio projects
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- PROJECT 1 -->
+                <div class="bg-gray-100 rounded-2xl shadow-lg overflow-hidden">
+
+                    <img
+                        src="https://picsum.photos/500/300?random=1"
+                        alt="Portfolio Website"
+                        class="w-full h-56 object-cover">
+
+                    <div class="p-8">
+
+                        <h3 class="text-2xl font-semibold mb-3">
+                            Portfolio Website
+                        </h3>
+
+                        <p class="text-gray-600 mb-4">
+                            Personal portfolio website project using HTML, CSS and JavaScript.
+                        </p>
+
+                        <a href="portfolioproject/index.html"
+                           class="text-blue-600 font-semibold hover:underline">
+                           View Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- PROJECT 2 -->
+                <div class="bg-gray-100 rounded-2xl shadow-lg overflow-hidden">
+
+                    <img
+                        src="https://picsum.photos/500/300?random=2"
+                        alt="Calculator Project"
+                        class="w-full h-56 object-cover">
+
+                    <div class="p-8">
+
+                        <h3 class="text-2xl font-semibold mb-3">
+                            Scientific Calculator
+                        </h3>
+
+                        <p class="text-gray-600 mb-4">
+                            Interactive calculator with advanced operations and responsive UI.
+                        </p>
+
+                        <a href="calculator/calculator.html"
+                           class="text-blue-600 font-semibold hover:underline">
+                           View Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- PROJECT 3 -->
+                <div class="bg-gray-100 rounded-2xl shadow-lg overflow-hidden">
+
+                    <img
+                        src="https://picsum.photos/500/300?random=3"
+                        alt="Landing Page"
+                        class="w-full h-56 object-cover">
+
+                    <div class="p-8">
+
+                        <h3 class="text-2xl font-semibold mb-3">
+                            Landing Page
+                        </h3>
+
+                        <p class="text-gray-600 mb-4">
+                            Modern responsive landing page design using HTML and CSS.
+                        </p>
+
+                        <a href="landingpage/index.html"
+                           class="text-blue-600 font-semibold hover:underline">
+                           View Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+
+        <div class="max-w-4xl mx-auto px-6 text-center">
+
+            <h2 class="text-4xl font-bold mb-6">CONTACT ME</h2>
+
+            <p class="text-gray-300 mb-8">
+                Feel free to connect with me through social media.
+            </p>
+
+            <div class="flex justify-center gap-8 text-3xl">
+
+                <a href="https://github.com/"
+                   target="_blank"
+                   class="hover:text-blue-400 transition">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+                <a href="https://linkedin.com/"
+                   target="_blank"
+                   class="hover:text-blue-400 transition">
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                </a>
+
+                <a href="mailto:ranjitha@example.com"
+                   class="hover:text-blue-400 transition">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-8 text-center">
+
+        <p class="text-sm text-gray-400">
+            © 2026 BURADA RANJITHA • Online Portfolio
+        </p>
+
+    </footer>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
